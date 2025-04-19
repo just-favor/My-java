@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 99%;
+    background: url(images/footballnet.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 3%;
+}
+header>i{
+    color: rgb(57, 249, 67);
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+h1{
+    font-size: 250%;
+    font-weight: bolder;
+    color: rgb(30, 255, 0);
+}
+h2{
+    color: white;
+    font-style: italic;
+}
+h3{
+    color: white;
+    font-size: xx-large;
+}
+p{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+section{
+    padding: 3%;
+}
+.container{
+    background: url(images/close-up-athlete-playing-soccer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+    padding: 2%;
+}
+.container1{
+    padding: 6%;
+}
+.content{
+    width: 60%;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(94, 147, 192, 0.6);
+    width: 100%;
+    padding: 4%;
+    border-radius: 0 0 20px 20px;
+}
+.section2>p{
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.matches{
+    margin: 10% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.5px solid black;
+    padding: 2%;
+    width: 70%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(45deg, red,blue);
+    box-shadow: 10px 10px 10px 0;
+}
+.matches >p{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.matches>button{
+    font-weight: bold;
+    padding: 1%;
+    border-radius: 20px;
+    border: 0.5px solid;
+}
+.clubs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.manu{
+    background: url(images/manu.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: rgba(242, 223, 242,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+    border-radius: 20px;
+}
+.chelsea{
+    background: url(images/chelsea.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: rgba(242, 223, 242,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+    border-radius: 20px;
+}
+
+
+
+.leagues{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background:  white;
+    padding: 2%;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 10px 10px 10px 0;
+}   
+.leagues > p{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.leagues > button{
+    margin: 3% 0;
+    padding: 3% 5%;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    font-weight: bold;
+}
+.england{
+    background:linear-gradient(245deg, white, rgb(22, 135, 255)
+    );
+}
+.spain{
+    background:linear-gradient(245deg, white, rgb(255, 217, 0)
+    );
+}
+.italy{
+    background:linear-gradient(245deg, white, rgb(57, 249, 67)
+    );
+}
+.german{
+    background:linear-gradient(245deg, white, rgb(255, 0, 0)
+    );
+}
+.france{
+    background:linear-gradient(245deg, white, rgb(0, 11, 113)
+    );
+}
+.england:hover{
+    background: url(images/Salah.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s ease-in;
+    color: aliceblue;
+    background-color: black;
+}
+.spain:hover{
+    background: url(images/laliga.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s ease-in;
+    color: aliceblue;
+    background-color: black;
+}
+.italy:hover{
+    background: url(images/seriaa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s ease-in;
+    color: aliceblue;
+    background-color: black;
+}
+.german:hover{
+    background: url(images/bundesliga.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s ease-in;
+    color: aliceblue;
+    background-color: black;
+}
+.france:hover{
+    background: url(images/ligue1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s ease-in;
+    color: aliceblue;
+    background-color: black;
+}
+.section3{
+    padding: 3%;
+}
+.nav{
+    padding: 3%;
+    background: url(images/ronaldobllll.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.nav>p{
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+    font-size: larger;
+    margin: 2% 0;
+}
+.headline{
+    display: flex;
+    justify-content: space-between;
+}
+.Hot{
+    width: 24%;
+    padding: 2%;
+    background: black;
+    border-radius: 20px;
+}
+h4{
+    text-align: center;
+    margin: 4% 0;
+    color: white;
+}
+li{
+    color: rgba(236, 242, 248, 0.6);
+    margin: 10% 0;
+}
+li:hover{
+    color: aliceblue;
+}
+.Hot>button{
+    padding: 2% 5%;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
