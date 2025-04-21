@@ -3,148 +3,743 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moviezone</title>
+    <title>MovieZone</title>
     <link rel="stylesheet" href="MovieZzone.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="Moviezone.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Movie Zzone<i class='bx bxs-movie-play'></i></h1>
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
-        </div>
-            </header>
-                <hr>
-                <aside>
-                    <h2>Movie Genres</h2>
-                    <nav class="aside-nav">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Trailers</a>
-                    </nav>
-                    <ul>
-                        <li><a href="">Action</a></li>
-                        <li><a href="">Comedy</a></li>
-                        <li><a href="">Romance</a></li>
-                        <li><a href="">Horror</a></li>
-                        <li><a href="">Sci-Fi</a></li>
-                        <li><a href="">Adventure</a></li>
-                        <li><a href="">Drama</a></li>
-                        <li><a href="">Crime</a></li>
-                        <li><a href="">Fantasy</a></li>
-                        <li><a href="">Thriller</a></li>
-                    </ul>
-                </aside>
+   <header>
+    <div class="head">
+        <i class='bx bx-menu' id="menu" style="font-size: xx-large;" onclick="menu()"></i>
+        <h1>MovieZone</h1>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for movies, shows, etc...">
+       <button class="search-btn"><i class='bx bx-search' id="search" style="font-size: x-large;"></i></button>        
+    </div>
+   </header>
+   <aside id="sidebar">
+       <div class="close-bar">
+       
+        <i class='bx bx-x' id="close" style="font-size: xx-large;"
+         onclick="document.getElementById('sidebar').style.display='none'"></i>
+       </div>
+   <nav class="side-nav">
+    <a href=""><div class="nav-box"><i class='bx bxs-home'></i><p>Home</p></div></a>
+    <a href=""><div class="nav-box"><i class='bx bx-movie-play'></i><p>Movies</p></div></a>
+    <a href=""><div class="nav-box"><i class='bx bx-camera-movie'></i><p>Series</p></div></a>
+    <a href=""><div class="nav-box"><i class='bx bx-slideshow'></i><p>Shows</p></div></a>
+   </nav>
+   <div class="genres">
+    <h2 style="text-align: center;">Genres</h2>
+    <div class="genre-box">
+        <a href=""><p>Action</p></a>
+        <a href=""><p>Drama</p></a>
+        <a href=""><p>Comedy</p></a>
+        <a href=""><p>Thriller</p></a>
+        <a href=""><p>Romance</p></a>
+        <a href=""><p>Sci-Fi</p></a>
+        <a href=""><p>Horror</p></a>
+        <a href=""><p>Fantasy</p></a>
+        <a href=""><p>Documentary</p></a>
+        <a href=""><p>Animation</p></a>
+        <a href=""><p>Adventure</p></a>
+    </div>
+   </div>
+   <div class="settings">
+    <button class="settings-btn">
+    <i class='bx bxs-cog' style="font-size: x-large;" ></i>
+    <h3>Settings</h3>
+    </button>
+   </div>
+   </aside>
    <main>
-    <h2>Movies Ground</h2>
-    <div class="wall">
+    <h2>Trending Movies</h2>
+    <div class="movie-section">
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/capameric.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Captain America</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/avater.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Avater</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Batman.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Batman</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/deadpool t.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Deadpool</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Doctor Strange.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Doctor Strange</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/dune.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Dune</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Ghost Rider.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Ghost Rider</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/guardians.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Guardians</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/joker.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Joker</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/jurasic park.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Jurasic Park</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Man of Steel.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Man of Steel</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/rampage.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Rampage</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/spider man.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Spider Man</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/THE LEGEND OF TARZAN starring Alexander Skarsgard….jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Tarzan</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/thor.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Thor</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/venom.jpg" 1997.jpg>
+            </div>
+            <div class="m-title">
+                <h5>Venom</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/War Craft.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Warcraft</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
     </div>
-    <h3>Trending Movies</h3>
-    <div class="movie-box">
-            <div class="movies">
-                <img src="/Images/Ghost Rider.jpg" alt="image">
-                <p>Ghost Rider</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/deadpool t.jpg" alt="image">
-                <p>Deadpool</p>
-            </div>
-           
-            <div class="movies">
-                <img src="/Images/Batman.jpg" alt="image">
-                <p>Batman</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/avater.jpg" alt="image">
-                <p>Godzilla</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/Man of Steel.jpg" alt="image">
-                <p>Man of Steel</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/spider man.jpg" alt="image">
-                <p>Spider Man</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/capameric.jpg" alt="image">
-                <p>Captain America</p>
-            </div>
-           
-            <div class="movies">
-                <img src="/images/Doctor Strange.jpg" alt="image">
-                <p>Doctor Strange</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/jurasic park.jpg" alt="image">
-                <p>Jurasic Park</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/rampage.jpg" alt="image">
-                <p>Rampage</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/joker.jpg" alt="image">
-                <p>Joker</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/thor.jpg" alt="image">
-                <p>Thor</p>
-            </div>
-            <div class="movies">
-                <img src="/Images/THE LEGEND OF TARZAN starring Alexander Skarsgard….jpg" alt="image">
-                <p>TARZAN</p>
-            </div>
-            
     </div>
-    <h3>Trending Series</h3>
- <div class="movie-box">
-    <div class="movies">
-        <img src="/Images/dune.jpg" alt="image">
-        <p>Dune</p>
-    </div>
-    <div class="movies">
-        <img src="/Images/guardians.jpg" alt="image">
-        <p>Guardians</p>
-    </div>
-    <div class="movies">
-        <img src="/Images/arrow.jpg" alt="image">
-         <p>Arrow</p>
-             </div>
-           <div class="movies">
-             <img src="/Images/Peaky blinders.jpg" alt="image">
-             <p>Peaky Blinders</p>
+    <h2>Trending Series</h2>
+    <div class="movie-section">
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/arrow.jpg" alt="">
             </div>
-                 <div class="movies">
-                    <img src="/Images/invincible.jpg" alt="image">
-                     <p>Invincible</p>
-                 </div>
-                 <div class="movies">
-                    <img src="/Images/One Piece.jpg" alt="image">
-                    <p>One Piece</p>
-                </div>
-                <div class="movies">
-                    <img src="/Images/the boys.jpg" alt="image">
-                    <p>The Boys</p>
-                </div>
-                <div class="movies">
-                    <img src="/Images/The 100.jpg" alt="image">
-                    <p>The !00</p>
-                </div>
-                <div class="movies">
-                    <img src="/Images/Naruto.jpg" alt="image">
-                    <p>Naruto</p>
-                </div>
-                <div class="movies">
-                    <img src="/Images/Got.jpg" alt="image">
-                    <p>G.O.T</p>
-                </div>
+            <div class="m-title">
+                <h5>Arrow</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Naruto.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Naruto</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/the boys.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>The Boys</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/The 100.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>The 100</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Peaky blinders.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Peaky Blinders</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/One Piece.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>One Piece</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/invincible.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Invincible</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Got.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Game Of Thrones</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Captblack7601.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Arrow</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/arrow.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Arrow</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
     </div>
-    </main>
-    <footer>
-        <h3>Thank You...</h3>
-    </footer>
+    <h2>Action</h2>
+    <div class="movie-section">
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/capameric.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Captain America</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/avater.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Avater</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Batman.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Batman</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/deadpool t.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Deadpool</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Doctor Strange.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Doctor Strange</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/dune.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Dune</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Ghost Rider.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Ghost Rider</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/guardians.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Guardians</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/joker.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Joker</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/jurasic park.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Jurasic Park</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Man of Steel.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Man of Steel</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/rampage.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Rampage</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/spider man.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Spider Man</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/THE LEGEND OF TARZAN starring Alexander Skarsgard….jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Tarzan</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+    </div>
+    <h2>Thriller</h2>
+    <div class="movie-section">
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/capameric.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Captain America</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/avater.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Avater</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Batman.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Batman</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/deadpool t.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Deadpool</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Doctor Strange.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Doctor Strange</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/dune.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Dune</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Ghost Rider.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Ghost Rider</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/guardians.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Guardians</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/joker.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Joker</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/jurasic park.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Jurasic Park</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/Man of Steel.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Man of Steel</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/rampage.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Rampage</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/spider man.jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Spider Man</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+        <div class="movie-box">
+            <div class="m-img">
+                <img src="/movie-images/THE LEGEND OF TARZAN starring Alexander Skarsgard….jpg" alt="">
+            </div>
+            <div class="m-title">
+                <h5>Tarzan</5>
+            </div>
+            <div class="file-btn">
+                <button class="watch">Play</button>
+                <button class="download">download</button>
+            </div>
+        </div>
+    
+   </main>
+   <footer>
+    <h2>
+        Thank you...
+    </h2>
+    <div class="toot-nav"></div>
+   </footer>
 </body>
+<script>
+    function menu() {
+        document.getElementById("sidebar").style.display = "block";
+    }
+  
+
+</script>
 </html>
