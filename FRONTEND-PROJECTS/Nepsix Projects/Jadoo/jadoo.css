@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+body{
+    rgba(255, 255, 255, 1);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+}
+.top-nav{
+    display: flex;
+    gap: 6rem;
+}
+.top-nav a{
+    color: black;
+    font-size: large;
+
+}

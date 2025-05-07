@@ -1,0 +1,183 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 8%;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(1, 62, 106, 0.942);
+}
+nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav button{
+    padding: 10px 10px;
+    background-color: rgba(1, 62, 106, 0.942);
+    color: white;
+    border: none;
+}
+.main{
+    height: 90vh;
+    width: 100%;
+    background-color: rgba(1, 62, 106, 0.942);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.main button{
+    padding: 3% 5%;
+    font-size: large;
+    margin-top: 5%;
+}
+.text{
+    position: absolute;
+    right: 55%;
+}
+.bottle-img{
+    width: 600px;
+    position: absolute;
+    bottom: -15%;
+    right: 7%;
+}
+h2{
+    font-size: 80px;
+    color: white;
+}
+h3{
+    margin: 4% 0;
+    font-size: xx-large;
+}
+h4{
+    color: rgba(37, 37, 37, 0.596);
+    margin-bottom: 30%;
+}
+p{
+    color: white;
+    line-height: 2;
+    margin-top: 5%;
+    font-size: large;
+}
+.section1{
+    margin-top: 8%;
+    padding: 10%;
+}
+.bold{
+    color: rgb(37, 37, 37);
+}
+.box p{
+    color: rgb(37, 37, 37);
+    margin: 0;
+}
+.box img{
+   border-radius: 100%;
+   border: 1px solid rgba(1, 62, 106, 0.942);
+   width: 23%;
+}
+.boxes{
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.section2{
+    padding: 0 10%;
+}
+.wall{
+    background-color: rgba(1, 62, 106, 0.942);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 6%;
+}
+.wall button{
+    padding: 1% 4%;
+    font-weight: bold;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 0%;
+}
+.section3{
+    padding: 5% 10%;
+    background-color: rgb(227, 227, 227);
+    margin-top: 8%;
+}
+.logos{
+    width: 26%;
+}
+.logos i{
+  font-size: xx-large;
+  margin: 0 10px;
+}
+.the-end{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 50px ;
+}
+.end-list{
+ margin-top: 50px;
+}
+.end-list p{
+    color: rgb(37, 37, 37);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 3;
+}
+
+nav a:hover{
+    font-weight:bold;
+}
+@media (max-width: 800px) {
+    nav{
+        display: none;
+    }
+    .bottle-img{
+       display: none;
+    }
+    .main{
+       height: 600px;
+    }
+    h2{
+        font-size: xx-large;
+    }
+    .text{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text button{
+        padding: 2%;
+        font-size: large;
+    }
+    .boxes{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 80px;
+    }
+    .box{
+        width: 500px;
+    }
+}

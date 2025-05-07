@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Device</title>
+    <link rel="stylesheet" href="Mobile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1>YO!</h1>
+        <i class='bx bxs-sun' style='color:#f1dc02'  onclick="light()"></i>
+        <i class='bx bxs-moon' undefined onclick="dark()" style="color: black;"></i> 
+    </header>
+    <hr>
+    <div class="container">
+        <div class="mobile" id="mobile">
+            <div class="notch"></div>
+            <div class="content1 edge">
+                <p>glo</p>
+                <p>LTE <i class='bx bxs-battery-low' undefined ></i></p>
+            </div>
+            <div class="time" id="time">
+                <h1>Tuesday, March 25</h1>
+                <h2>9:20</h2>
+            </div>
+            <div class="notification">
+                <div class="box">
+                    <i class='bx bxl-instagram' style='color:#e1306c'  ></i>
+                    <p> <b>Instagram </b><br>
+                    notification
+                    </p>
+                </div>
+                <div class="box">
+                    <i class='bx bxl-twitter' style='color:#00a4f7'  ></i>
+                    <p><b>Twitter</b> <br>
+                        notification
+                    </p>
+                </div>
+            </div>
+            <div class="content2 edge"></div>
+        </div>
+    </div>
+    <script>
+        function dark() {
+            document.getElementById('mobile').style.backgroundImage = 'url(/CODING/Images/clouds.jpg)' ;
+            document.getElementById('time').style.color = 'red'
+
+            let edge = document.getElementsByClassName('edge');
+            for(let i = 0; i < edge.length; i++)
+            edge[i].style.background = 'red'
+        }
+
+        function light() {
+            document.getElementById('mobile').style.backgroundImage =  'url(/FRONTEND-PROJECTS/Images/mount-mont-blanc-covered-snow-reflecting-water-evening-chamonix-france.jpg)';
+            let edge = document.getElementsByClassName('edge');
+            for(let i = 0; i < edge.length; i++)
+            edge[i].style.background = 'cyan'
+
+            document.getElementById('time').style.color = 'white'
+        }
+    </script>
+</body>
+</html>
+

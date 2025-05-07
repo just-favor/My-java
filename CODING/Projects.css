@@ -1,0 +1,223 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(0, 17, 17);
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+header{
+    grid-area: header;
+    color: cyan;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    z-index: 100;
+}
+.head-box{
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.375);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30rem;
+    border: 1px solid cyan;
+}
+.head-box:hover{
+    background-color: black;
+    transition: 0.6s ease;
+}
+h1{
+    z-index: 1;
+}
+.top-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.tp-lg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem;
+}
+.tp-lg a{
+    color: cyan;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.tp-lg .bx{
+    font-size: 1.3rem;
+    color: cyan;
+}
+.tp-lg:hover{
+    border-bottom: 2px solid cyan;
+}
+#dropdown{
+    display: none;
+}
+main{
+    grid-area: main;
+    margin: 10rem 0;
+    min-height: 80vh;
+    background-color: rgba(0, 17, 17, 0);
+}
+.main-container{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+.project-wrapper{
+    height: 15rem;
+    width: 25rem;
+    background: black;
+    animation: appear 1s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan;
+    overflow: hidden;
+}
+.project-wrapper:hover{
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}
+@keyframes appear{
+   from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.project-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.project-box h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.project-wrapper button{
+    background: cyan;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900 ;
+    box-shadow: 0 0 5px cyan;
+    border: 1px solid black;
+    margin: 0.5rem 0;
+}
+.project-wrapper button:hover{
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}
+.pb1{
+    background: url(/CODING/IMAGES/forest.JPG) no-repeat center center;
+    background-size: cover;
+}
+.pb2{
+    background: url(/CODING/IMAGES/light.JPG) no-repeat center center;
+    background-size: cover;
+}
+.pb3{
+    background: url(/CODING/IMAGES/clouds.JPG) no-repeat center 80%;
+    background-size: cover;
+}
+.pb4{
+    background: url(/FRONTEND-PROJECTS/Images/fresh-yellow-daisy-single-flower-close-up-beauty-generated-by-ai.jpg) no-repeat center center;
+    background-size: cover;
+}
+.pb5{
+    background: url(/CODING/IMAGES/forest2.JPG) no-repeat center center;
+    background-size: cover;
+}
+.pb6{
+    background: url(/CODING/IMAGES/magic\ bottle.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+footer{
+    grid-area: footer;
+    color: cyan;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5rem;
+    z-index: 100;
+    background: black;
+    border-top: 4px solid cyan;
+}
+.rotate{
+    height: 55rem;
+    width: 55rem;
+    background: conic-gradient(rgba(255, 255, 255, 0.675), rgba(0, 0, 0, 0.707));
+    filter: blur(0rem);
+    animation: animate 60s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    z-index: -1;
+    border-radius: 100%;
+    box-shadow: 0 0 100px black;
+}
+.rotate::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(10px);
+}
+.rotate::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(10px);
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
